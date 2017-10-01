@@ -1,0 +1,33 @@
+<form action="" method="POST" role="form">
+    <legend>Dicionário</legend>
+
+    <div class="form-group">
+        <label for="textarea">Digite ou cole seu texto aqui:</label>
+
+        <textarea name="textarea" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="20" required="required" aria-label="Digite ou cole seu texto aqui:"></textarea>
+
+    </div>
+
+
+</form>
+<div class="input-group col-sm-4 my-2">
+
+    <span class="input-group-addon">Palavra selecionada:</span>
+
+
+    <input type="text" name="input" id="input${1/(\w+)/\u\1/g}" class="form-control" required="required" aria-label="Palavra selecionada:"
+        readonly>
+
+</div>
+
+
+<div class="panel panel-info my-2">
+    <div class="panel-heading">
+        <h1 class="panel-title">Definição:</h1>
+    </div>
+    <div class="panel-body">
+
+    </div>
+</div>
+
+<script src="js/index.js"></script>
